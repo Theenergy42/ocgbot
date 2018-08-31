@@ -8,7 +8,7 @@ bot.on('ready', function(){
 	console.log("Connecté");
 });
 
-bot.login("NDg0ODU5ODY0MDk5ODQ4MjIz.Dmp1Xg.L_SZ-dQEYS9bkZ_cpON2_GR78WI")
+bot.login(process.env.TOKEN)
 
 bot.on('message', message => {
 	if (message.content === prefix + "code"){
